@@ -46,6 +46,16 @@ table {
 }
 
 /* CUSTOM STYLES */
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham-Black.woff2') format('woff2'),
+        url('Gotham-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
 html, body {
     margin: 0;
     padding: 0;
@@ -86,16 +96,75 @@ html, body {
     border-radius: 1px;
 }
 
-
 .request-block {
-    width: 100%;
-    height: 590px;
-    margin-bottom: 130px;
-    background-color: #709dca;
+    background: linear-gradient(#709dca 589px, transparent 175px);
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+    padding: 110px 265px 70px 265px;
+}
+
+.wrapper-slogan {
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+
+.h-slogan {
+    font-family: 'Gotham';
+    font-size: 35px;
+    letter-spacing: -0.025em;
+    font-weight: bold;
+}
+
+.p-slogan {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.wrapper-request {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.input-group {
+   background-color: #ffffff;
+   width: 280px;
+   display: flex;
+   float: left;
+   height: 45px;
+   margin: 5px;
+   border-radius: 2px;
+}
+
+.request-item {
+    border: none;
+    padding: 0;
+    padding-left: 10px;
+    font-size: 13px;
+    line-height: 45px;
+    outline: none;
+}
+
+.request-item-submit {
+    background-color: #ffbb42;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.input-icon {
+    margin-left: 15px;
+    line-height: 45px;
+    color: #6e6e6e;
 }
 
 .copyright-block {
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-size: 13px;
     line-height: 24px;

@@ -1,0 +1,104 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CUSTOM STYLES */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    height: 93px;
+    padding: 0 265px;
+}
+
+.logo {
+    margin: auto 0;
+
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ref-menu {
+    color: #868686;
+    display: block;
+    text-decoration: none;
+    margin: auto 0;
+    padding: 12px 21px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13.5px;  
+    text-transform: uppercase;
+}
+
+.ref-menu:hover {
+    background-color: #ffbb42;
+    color: #ffffff;
+    border-radius: 1px;
+}
+
+
+.request-block {
+    width: 100%;
+    height: 590px;
+    margin-bottom: 130px;
+    background-color: #709dca;
+}
+
+.copyright-block {
+    font-family: Open Sans;
+    text-align: center;
+    font-size: 13px;
+    line-height: 24px;
+    color: #ffffff;
+    background-color:  #709dca;
+}

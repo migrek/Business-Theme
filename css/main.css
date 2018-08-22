@@ -54,12 +54,11 @@ table {
     font-style: normal;
 }
 
-
-
 html, body {
     margin: 0;
     padding: 0;
 }
+
 .header {
     background-color: #ffffff;
     display: flex;
@@ -70,7 +69,6 @@ html, body {
 
 .logo {
     margin: auto 0;
-
 }
 
 .main-menu {
@@ -97,10 +95,11 @@ html, body {
 }
 
 .request-block {
-    background: linear-gradient(#709dca 590px, transparent 120px);
+    background: linear-gradient(#709dca 75%, transparent 25%);
+    min-height: 600px;
     display: flex;
     flex-direction: column;
-    padding: 110px 265px 70px 265px;
+    padding: 100px 265px 100px 265px;
 }
 
 .wrapper-slogan {
@@ -129,7 +128,6 @@ html, body {
     flex-wrap: wrap;
     font-family: 'Open Sans', sans-serif;
 }
-
 
 .input-group {
    background-color: #ffffff;
@@ -160,6 +158,7 @@ html, body {
     border-radius: 2px;
     width: 280px;
     min-width: 280px;
+    cursor: pointer;
 }
 
 .input-icon {
@@ -218,7 +217,7 @@ html, body {
 }
 
 .services {
-    height: 740px;
+    min-height: 740px;
     display: flex;
     flex-direction: column;
     padding: 0 265px;
@@ -236,13 +235,17 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .serv-item {
-    margin: 0 50px 70px 0;
-    width: 550px;
+    margin-bottom: 70px;
     display: flex;
+    flex: 1 0 420px;
+}
+
+.serv-item:nth-child(2n+1) {
+    margin-right: 50px;
 }
 
 .serv-icon {
@@ -318,7 +321,7 @@ html, body {
     text-transform: uppercase;
     box-sizing: border-box;
     padding:  55px 30px 47px 30px;
-
+    margin: 30px 0;
 }
 
 .price-item:hover {
@@ -327,14 +330,16 @@ html, body {
     padding: 85px 60px 77px 60px;
     width: 445px;
     height: 500px;
+    margin: 0;
+    border: none;
 }
+
 
 .plan-name {
     color: #818b95;
     font-size: 25px;
     padding-bottom: 30px;
 }
-
 
 .cost-price-item {
     font-size: 60px;
@@ -347,7 +352,6 @@ html, body {
     padding-bottom: 30px;
 }
 
-
 .info-price-item {
     line-height: 40px;
     color: #b5bbc1;
@@ -358,6 +362,134 @@ html, body {
 .button-price {
     width: 130px;
     min-width: 130px;
+}
+
+.price-item:hover ~ .plan-name .cost-price-item {
+    color: #ffffff;
+}
+
+.info-price-item:hover {
+    color: #c2e1ff;
+    border-color: #c2e1ff;
+}
+
+.steps-block {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 265px;
+    text-align: center;
+}
+
+.steps-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+    max-width: 220px;
+    position: relative;
+}
+
+.img-arrow {
+    position: absolute;
+    right: -105px;
+    top:40px;
+}
+
+.img-arrow-transform {
+    transform: scale(1,-1);
+}
+
+.step-num {
+    color: #394b50;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;  
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.step-about {
+    color: #394b50;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;  
+    text-transform: uppercase;
+
+}
+
+.step-icon {
+    color: #709dca;
+    font-size: 72px;
+    margin: 80px 50px;
+}
+
+.step-icon:hover {
+    color: #ffbb42;
+} 
+
+.button-about {
+    width: 140px;
+    min-width: 140px;
+    border: 1px solid #e7ad48;
+    margin: 0;
+}
+
+.p-extra-indent {
+    margin: 20px 0;
+}
+
+.button-step {
+    margin: 90px auto 0 auto;
+}
+
+.clients {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffc155;
+    justify-content: center;
+}
+
+.wrapper-quote-block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    padding: 60px 265px;
+}
+
+.quote-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 2px;
+    max-width: 565px;
+    margin: 10px;
+}
+
+
+.photo-outhor {
+    min-width: 125px;
+    min-height: 125px;
+    border-radius: 50%;
+}
+
+.quote-outhor {
+    text-transform: uppercase;
+    color: #f6772c;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.alt-color-author {
+    color: #99a9ae;
 }
 
 

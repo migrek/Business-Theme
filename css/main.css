@@ -146,7 +146,6 @@ html, body {
     font-size: 13px;
     line-height: 45px;
     outline: none;
-    width: 100%;
 }
 
 .button-submit {
@@ -236,17 +235,16 @@ html, body {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
+    margin-right: -50px;
 }
 
 .serv-item {
     margin-bottom: 70px;
     display: flex;
+    margin-right: 50px;
     flex: 1 0 420px;
 }
 
-.serv-item:nth-child(2n+1) {
-    margin-right: 50px;
-}
 
 .serv-icon {
     float: left;
@@ -460,25 +458,33 @@ html, body {
 .wrapper-quote-block{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    justify-content: center; 
     padding: 60px 265px;
 }
 
 .quote-block {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     background-color: #ffffff;
     border-radius: 2px;
-    max-width: 565px;
+    max-width: 555px;
     margin: 10px;
+    padding: 40px 20px 50px 30px;
+    box-sizing: content-box;
 }
 
+.quote-text-block {
+    display: flex;
+    flex-direction: column;
+}
 
 .photo-outhor {
-    min-width: 125px;
-    min-height: 125px;
+    width: 125px;
+    height: 125px;
     border-radius: 50%;
+    margin-right: 30px;
 }
 
 .quote-outhor {
@@ -492,6 +498,90 @@ html, body {
     color: #99a9ae;
 }
 
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 50px 265px 45px 265px;
+}
+
+.alt-contour {
+    border: 1px solid #cbcbcb;
+}
+
+.alt-menu{
+    justify-content: center;
+    padding: 0;
+}    
+
+.map-wrapper {
+    position: relative;
+    padding: 50px 0;
+    min-height: 580px;
+}
+
+.img-map {
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+}
+
+.circle-contact {
+    width: 280px;
+    height: 280px;
+    background-color: #394b50;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top: calc(50% - 140px);
+    left: calc(50% - 140px);
+}
+
+.top-addr {
+    color: #aeb7ba;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px; 
+    color: #ffffff;
+}
+
+.addr-block {
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    line-height: 24px;  
+}
+
+.alt-color-addr {
+    color: #ffbb42;
+}
+
+.tel-ref {
+    color: #394b50;
+    text-align: center;
+}
+
+.tel-link {
+    font-family: 'Lato', sans-serif;
+    font-size: 22.5px;
+    text-decoration: none;
+    color: #394b50;
+}
+
+.social-icon-ref {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bottom-social-icon {
+    color: #709dca;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.bottom-social-icon:hover {
+    color: #ffc155;
+}
 
 .copyright-block {
     font-family: 'Open Sans', sans-serif;

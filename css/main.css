@@ -230,7 +230,7 @@ html, body {
 }
 
 .services {
-    min-height: 740px;
+    min-height: 680px;
     display: flex;
     flex-direction: column;
     padding: 50px 0;
@@ -250,7 +250,7 @@ html, body {
     justify-content: center;
     flex-direction: row;
     max-width: 1170px;
-    margin: auto;
+    margin: 20px auto;
     padding-left: 50px;
 }
 

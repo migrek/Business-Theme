@@ -48,21 +48,20 @@ table {
 /* CUSTOM STYLES */
 @font-face {
     font-family: 'Gotham';
-    src: url('Gotham-Black.woff2') format('woff2'),
-        url('Gotham-Black.woff') format('woff');
+    src: url(../fonts/Gotham-Black.woff2) format('woff2'),
+        url(../fonts/Gotham-Black.woff) format('woff');
     font-weight: 900;
     font-style: normal;
 }
 
-
 @font-face {
-    font-family: 'Brandon Grotesque Bold';
-    src: url('BrandonGrotesque-Bold.eot');
-    src: url('BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
-    url('.BrandonGrotesque-Bold.woff') format('woff'),
-    url('BrandonGrotesque-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+font-family: 'Brandon Grotesque Bold';
+src: url(../fonts/BrandonGrotesque-Bold.eot);
+src: url(../fonts/BrandonGrotesque-Bold.eot?#iefix) format('embedded-opentype'),
+url(../fonts/BrandonGrotesque-Bold.woff) format('woff'),
+url(../fonts/BrandonGrotesque-Bold.ttf) format('truetype');
+font-weight: normal;
+font-style: normal;
 }
 
 html, body {
@@ -250,14 +249,13 @@ html, body {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-    margin-right: -50px;
 }
 
 .serv-item {
     margin-bottom: 70px;
     display: flex;
     margin-right: 50px;
-    max-width: 565px;
+    max-width: 585px;
 }
 
 
@@ -294,6 +292,7 @@ html, body {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 
 .info-about {
     display: flex;
@@ -497,8 +496,8 @@ html, body {
     background-color: #ffffff;
     border-radius: 2px;
     max-width: 555px;
-    margin: 10px;
-    padding: 40px 20px 50px 30px;
+    margin: 10px 20px;
+    padding: 40px 40px 50px 20px;
     box-sizing: content-box;
 }
 
@@ -508,26 +507,31 @@ html, body {
     max-width: 345px;
 }
 
+.quotation {
+	padding: 7px 20px;
+	margin-bottom: 10px;
+}
+
 .quotation::before {
     content: "\201C";
     color:  #7b7b7b;
     font-size: 30px;
-    left: -20px;
-    top: -5px;
+    left: 0;
+    top: 14px;
     position: absolute;
     font-weight: bold;
-    font-family: 'Brandon Grotesque Bold', serif;
+    font-family: 'Brandon Grotesque Bold';
 }
 
 .quotation::after {
     content: "\201E";
     color:  #7b7b7b;
     font-size: 30px;
-    right: -15px;
-    bottom: -15px;
+    right: 0;
+    bottom: -5px;
     position: absolute;
     font-weight: bold;
-    font-family: 'Brandon Grotesque Bold', serif;
+    font-family: 'Brandon Grotesque Bold';
     transform: scale(1, -1); 
 }
 
@@ -535,7 +539,7 @@ html, body {
     width: 125px;
     height: 125px;
     border-radius: 50%;
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .quote-outhor {
@@ -543,6 +547,7 @@ html, body {
     color: #f6772c;
     font-size: 14px;
     line-height: 22px;
+    padding-left: 20px;
 }
 
 .alt-color-author {
@@ -570,7 +575,9 @@ html, body {
     margin: 50px 0;
     height: 550px;
     background-size: contain;
-    background: url(../images/map.png) no-repeat center;
+    background: url(../images/map.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .central-map-block {

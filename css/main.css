@@ -251,6 +251,7 @@ html, body {
     flex-direction: row;
     max-width: 1170px;
     margin: auto;
+    padding-left: 50px;
 }
 
 .serv-item {

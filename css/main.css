@@ -419,15 +419,26 @@ html, body {
     position: relative;
 }
 
-.img-arrow {
+.step-item:nth-child(2n):after {
     position: absolute;
     right: -105px;
     top:40px;
+    content: url(../images/arrow.png);
 }
 
-.img-arrow-transform {
+
+.step-item:nth-child(2n+1):after {
+    position: absolute;
+    right: -105px;
+    top:40px;
+    content: url(../images/arrow.png);
     transform: scale(1,-1);
 }
+
+.step-item:last-child:after {
+    content: none;
+}
+
 
 .step-num {
     color: #394b50;
@@ -599,7 +610,7 @@ html, body {
 }
 
 .auto-mar {
-    margin: auto;
+    margin: -1px auto 0 auto;
 }
 
 .top-addr {
@@ -673,9 +684,14 @@ html, body {
 @media all and (max-width: 920px) {
     .steps-wrapper {
        flex-wrap: wrap}
-    .img-arrow {
-        display: none;
-    }
+
+    .step-item:nth-child(2n):after {
+     content: none;}
+
+
+    .step-item:nth-child(2n+1):after {
+     content: none;}
+
     .picture-info-block {
         display: none;}
 }

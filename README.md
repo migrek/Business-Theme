@@ -1,1 +1,1 @@
-# HTML-page Business Theme
+# HTML-page Business Theme (orange style)
